@@ -6,9 +6,9 @@ import { BigNumber } from 'ethers';
 
 const configurations: { [env: string]: Configuration } = {
   development: {
-    chainId: ChainId.MAINNET,
+    chainId: ChainId.ropsten,
     etherscanUrl: 'https://etherscan.io',
-    defaultProvider: 'https://mainnet.infura.io/v3/6016e110fcb84dcf90a0bc2718ae2182',
+    defaultProvider: 'https://ropsten.infura.io/v3/6016e110fcb84dcf90a0bc2718ae2182',
     deployments: require('./basis-cash/deployments/deployments.ropsten.json'),
     externalTokens: {
       DAI: ['0x6B175474E89094C44Da98b954EedeAC495271d0F', 18],
@@ -26,10 +26,10 @@ const configurations: { [env: string]: Configuration } = {
     gasLimitMultiplier: 1.1,
   },
   production: {
-    chainId: ChainId.MAINNET,
+    chainId: ChainId.ropsten,
     etherscanUrl: 'https://etherscan.io',
-    defaultProvider: 'https://mainnet.infura.io/v3/06ecf536272c43c78adfba29b908a68d',
-    deployments: require('./basis-cash/deployments/deployments.mainnet.json'),
+    defaultProvider: 'https://ropsten.infura.io/v3/6016e110fcb84dcf90a0bc2718ae2182',
+    deployments: require('./basis-cash/deployments/deployments.ropsten.json'),
     externalTokens: {
       DAI: ['0x6B175474E89094C44Da98b954EedeAC495271d0F', 18],
       yCRV: ['0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8', 18],
